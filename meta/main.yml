@@ -1,0 +1,10 @@
+---
+galaxy_info:
+  author: cnstechnicalgroup
+  description: Ansible role to generate an EC2 keypair and store it using credstash
+  company: CNS Technical Group, Inc.
+  license: GPL2
+  min_ansible_version: 1.8
+  categories:
+  - aws, cloud, kms, dynamodb, credstash, security
+dependencies: []
