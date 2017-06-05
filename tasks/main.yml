@@ -9,5 +9,5 @@
 - debug: var=ec2_key
 
 - name: Store ec2 private key with credstash
-  shell: "AWS_PROFILE={{ aws_profile }} /usr/local/bin/credstash -r {{ region }} put ec2_key_{{ stack }} \"{{ ec2_key.key.private_key }}\""
+  shell: "/usr/local/bin/credstash -r {{ region }} -p {{ aws_profile  }} put ec2_key_{{ stack }} \"{{ ec2_key.key.private_key }}\""
   when: ec2_key.key.private_key is defined
